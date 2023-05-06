@@ -1,6 +1,13 @@
-# Project Title
+# Loan Qualifier - Module 2 Challenge
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+The BizOps team analyzed our borrower screening process, demanded a better customer experience with a more personalized, friendlier terminal intrerface, and the IT team has delivered beyond your wildest Branch Manager expectations!  Don't take our word for it, give it a try now!  
+ delivers our most advanced risk analysis matrix ever created.  We guarantee that you'll get back an extra 3 seconds of your life every day you open the bank.  
+
+Once you deploy this new state of the art technology in your UCB FinTech Credit Union Branch, you are on your way to cross selling a whole new world of exciting lending opportunities while growing your loan portfolio faster than ever before.  Building customer loyalty has never been easier when they see how much you care about their financial security.
+
+Cutting the wait times at the loan counter and delivering the best customer service in the world is our gift to you.  Your loan officers, credit counselors, and customers will all be thrilled to experience the marvels of the unparalleled marvel that can only be described as... 
+
+*The UCB FinTech Desktop Underwriter, Version 2.0*
 
 ---
 
