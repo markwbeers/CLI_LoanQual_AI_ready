@@ -1,0 +1,27 @@
+    1  cd Desktop/
+    2  cd HW_repos/
+    3  cd 2_loan_qualifier_v2/
+    4  ls
+    5  git status
+    6  conda activate dev
+    7  git status
+    8  git pull
+    9  ls
+   10  ls
+   11  git status
+   12  git status
+   13  git add .
+   14  git commit -m "added MIT license thru github and just updated readme in VSCode + copied user story and acceptance criteria into readme"
+   15  git push
+   16  git status
+   17  git push
+   18  git pull
+   19  git status
+   20  git push
+   21  git status
+   22  ls
+   23  git status
+   24  git add .
+   25  git commit -m "added user story and acceptance criteria from challenge inst to the readme"
+   26  git push
+   27  history 50 > terminal_history.txt
