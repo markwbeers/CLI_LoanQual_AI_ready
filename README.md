@@ -1,20 +1,6 @@
 # Loan Qualifier - Module 2 Challenge
     The BizOps team analyzed our borrower screening process, demanded a better customer experience with a more personalized, friendlier terminal intrerface, and the IT team has delivered beyond your wildest Branch Manager expectations!
 
-    User Story
-As a user, I need the ability to save the qualifying loans to a CSV file so that I can share the results as a spreadsheet.
-
-Acceptance Criteria
-Given that I’m using the loan qualifier CLI, when I run the qualifier, then the tool should prompt the user to save the results as a CSV file.
-
-Given that no qualifying loans exist, when prompting a user to save a file, then the program should notify the user and exit.
-
-Given that I have a list of qualifying loans, when I’m prompted to save the results, then I should be able to opt out of saving the file.
-
-Given that I have a list of qualifying loans, when I choose to save the loans, the tool should prompt for a file path to save the file.
-
-Given that I’m using the loan qualifier CLI, when I choose to save the loans, then the tool should save the results as a CSV file. 
-
 *Don't take our word for it, give it a try now!*  
 
 Once you deploy this new state of the art technology in your UCB FinTech Credit Union Branch, you are on your way to cross selling financial products and offering a whole new world of exciting lending opportunities.
@@ -27,7 +13,24 @@ Once you deploy this new state of the art technology in your UCB FinTech Credit 
 
 Now behold the wonders of financial technology and thrilling experience of the unparalleled marvel that can only be described as... 
 
-## *`The UCB FinTech Desktop Underwriter, Version 2.0`*
+# *`The UCB FinTech Desktop Underwriter, Version 2.0`*
+---
+
+
+## [*User Story*](https://courses.bootcampspot.com/courses/3426/assignments/52458?module_item_id=939546)
+        As a user, I need the ability to save the qualifying loans to a CSV file so that I can share the results as a spreadsheet.
+
+## [*Acceptance Criteria*](https://courses.bootcampspot.com/courses/3426/assignments/52458?module_item_id=939546)
+        Given that I’m using the loan qualifier CLI, when I run the qualifier, then the tool should prompt the user to save the results as a CSV file.
+
+        Given that no qualifying loans exist, when prompting a user to save a file, then the program should notify the user and exit.
+
+        Given that I have a list of qualifying loans, when I’m prompted to save the results, then I should be able to opt out of saving the file.
+
+        Given that I have a list of qualifying loans, when I choose to save the loans, the tool should prompt for a file path to save the file.
+
+        Given that I’m using the loan qualifier CLI, when I choose to save the loans, then the tool should save the results as a CSV file. 
+
 
 ---
 
