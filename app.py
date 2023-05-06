@@ -30,7 +30,9 @@ def underline(text):
     print("\u0332".join(text))
 
 underline("Welcome to the UCB FinTech Desktop Underwriter Terminal!\n") # added welcome text for more attractive UI
+
 print("Thank you for using our Home Equity Line of Credit (HELOC) pre-qual screening portal.\n")
+
 print("\t Today's Bank Loan Offerings located here --> 'data/rates.csv' <-- (enter below)\n") # made shortened .csv filename - improves ease of use
 
 def load_bank_data():
@@ -43,7 +45,7 @@ def load_bank_data():
     csvpath_rates = qst.text("Enter the file path above for today's bank rate-sheet (.csv):").ask() # improved ease of use, clarified instruction wording
     csvpath_rates = Path(csvpath_rates)
     if not csvpath_rates.exists():
-        sys.exit(f"Oops! Can't find this path: {csvpath_rates} - please run program again when ready...")
+        sys.exit(f"Let's try that again, Can't find the path: {csvpath_rates} - please run program again when ready... type >' $ python app.py'in your terminal")
 
     return load_csv(csvpath_rates)
 
@@ -105,11 +107,11 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     bank_data_filtered = filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
         
     if len(bank_data_filtered) == 0: # offered message of hope and encouragement below for failed applicant - and a clean errorless exit from the program below
-        sys.exit("Unfortunately you did not pre-qualify for loans today; however, you may schedule a free appointment with our credit counselor.")
+        sys.exit("Unfortunately you did not pre-qualify for a loan.  Don't despair, please stay and chat with our Credit Counselor for help ... free coffee and donuts included! ;)")
 
     print(f"You have qualified for {len(bank_data_filtered)} loans based on your responses.\n") # modified print-f below with % and CLTV increase comment
     print(f"If fully approved, will increase your 'combined loan to value'(CLTV Ratio) by {100 * loan_to_value_ratio:.02f}%.\n")
-    print(f"Ask your loan officer about a rate/term 'cash out' refi of current mortgage, especially if drawing the new loan for debt consolidation.")
+    print(f"Ask your loan officer about a rate/term 'cash out' refi of current mortgage, especially if drawing the new loan for debt consolidation.\n")
     
     return bank_data_filtered
 
@@ -121,16 +123,25 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    print("If you're an existing customer, we can pull the rest of your data and complete the approval process today.\n")
+    print("Or, if you would like to open an account, complete ID and credit check today as a new customer,\n")
+    print(" we would love to welcome you to the UCB FinTech Credit Union!")
+
     user_saves_loans = qst.confirm("Would you like to save the list of your pre-approved loan options as a (.csv) file?\n").ask()
     if user_saves_loans == False:
-        sys.exit("Thank you for checking your financing options using the desktop underwriter.  Rates, loan amounts, and borrower requirements are subject to change daily.")
+        print("Rates, loan amounts, and borrower requirements are subject to change daily.")
+        print("If you made a mistake and would like to talk to a personal banker or loan officer today,")
+        print("you may restart the app by entering--> `$ python app.py` at the terminal prompt.")
+        sys.exit("Thank you for checking your financing options using the desktop underwriter.")
 
     if user_saves_loans == True:
-        prequal_list_path = qst.text("please enter the path to save your list as a (.csv) file:\n").ask()
+        prequal_list_path = qst.text("Great! now just enter 'your_name.csv' to save your loan list,\n").ask()
         prequal_list_path = Path(prequal_list_path)
-    
-    print (f"Your loans are now saved in {prequal_list_path}.  Thank you for using the UCB FinTech Desktop Underwriter!\n")
-    
+
+    print("\n\tA personal banker will come to greet you with a printout and full application checklist in a few minutes.")
+    print(f"Your loans are now saved under'{prequal_list_path}'.\n")
+    print("\tCongratulations and thank you for using the UCB FinTech Desktop Underwriter!\n")
+    print("\tPlease and have a seat in the lounge, we will be with you shortly.\n")
     return save_csv(qualifying_loans, prequal_list_path)
             
     
