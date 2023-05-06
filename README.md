@@ -45,8 +45,6 @@ Get ready to experience the groundbreaking financial technology `Command Line In
 + Imported python libraries: `fire` *and* `questionary`
 + Framework used: `CLI`
 
- has to offer in Module 2Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
-
 ---
 
 ## Installation Guide
@@ -61,7 +59,6 @@ Then, open your terminal and type `conda activate dev` - take a seat and launch 
 ```
         $ python app.py
 ```
-In this section, you should include detailed installation notes containing code blocks and screenshots.
 
 ---
 
