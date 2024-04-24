@@ -1,5 +1,7 @@
 # Loan Qualifier - Module 2 Challenge
-    The BizOps team analyzed our borrower screening process, demanded a better customer experience with a more personalized, friendlier terminal intrerface, and the IT team has delivered beyond your wildest Branch Manager expectations!
+The BizOps team analyzed our borrower screening process, demanded a better customer experience with a more personalized, friendlier terminal intrerface.
+IT team has delivered beyond your wildest Branch Manager expectations!
+This prototype is ready for enhancements from AI and Machine Learning to help borrowers repair credit and secure funding! 
 
 *Don't take our word for it, give it a try now!*  
 
